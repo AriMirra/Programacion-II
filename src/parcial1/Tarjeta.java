@@ -7,4 +7,8 @@ import java.util.ArrayList;
  */
 public class Tarjeta {
     private ArrayList<Materia> materiasAceptadas;
+
+    public Tarjeta(ArrayList<Materia> materiasAceptadas) {
+        this.materiasAceptadas = materiasAceptadas;
+    }
 }

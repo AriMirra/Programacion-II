@@ -5,7 +5,6 @@ package parcialito;
  */
 public class OutOfMoneyException extends RuntimeException{
     public OutOfMoneyException(String message) {
-        //String message = "fondos insuficientes";
         super(message);
     }
 }

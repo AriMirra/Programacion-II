@@ -5,4 +5,7 @@ package parcial1;
  */
 public abstract class Persona {
     private Tarjeta tarjeta;
+
+    public Tarjeta getTarjeta() {return tarjeta;}
+
 }
