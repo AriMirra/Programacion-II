@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc592d4d-99f5-452a-a0dd-0772f8fc4f0c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/parcial1/Docente.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/parcial1/Edificio.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/parcial1/Materia.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/parcial1/Persona.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/parcial1/Tarjeta.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Programacion II.iws" />
@@ -777,8 +771,16 @@
       <workItem from="1474028127838" duration="8383000" />
       <workItem from="1475352498223" duration="24000" />
       <workItem from="1475352659359" duration="253000" />
-      <workItem from="1478630264341" duration="675000" />
+      <workItem from="1478630264341" duration="1314000" />
     </task>
+    <task id="LOCAL-00001" summary="created parcial 1">
+      <created>1478630968169</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1478630968169</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -814,7 +816,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113758000" />
+    <option name="totallyTimeSpent" value="114397000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -826,7 +828,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -867,6 +869,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="created parcial 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="created parcial 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
