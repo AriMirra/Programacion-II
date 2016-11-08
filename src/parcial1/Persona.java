@@ -3,6 +3,6 @@ package parcial1;
 /**
  * Created by arimi on 08-Nov-16.
  */
-public class Persona {
+public abstract class Persona {
     private Tarjeta tarjeta;
 }
