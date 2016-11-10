@@ -1,11 +1,10 @@
 package practicaParcial2;
 
 import org.junit.Test;
+import practicaParcial2.IteratorComparator.NumbersComparator;
 
 import java.util.ArrayList;
 import java.util.Random;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by arimi on 08-Nov-16.

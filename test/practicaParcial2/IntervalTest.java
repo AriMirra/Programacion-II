@@ -1,6 +1,7 @@
 package practicaParcial2;
 
 import org.junit.Test;
+import practicaParcial2.IteratorComparator.Interval;
 
 import java.util.ArrayList;
 

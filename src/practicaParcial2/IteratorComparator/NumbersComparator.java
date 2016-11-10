@@ -1,4 +1,4 @@
-package practicaParcial2;
+package practicaParcial2.IteratorComparator;
 
 import java.util.Comparator;
 

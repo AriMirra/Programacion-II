@@ -1,4 +1,4 @@
-package practicaParcial2;
+package practicaParcial2.IteratorComparator;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -47,6 +47,16 @@ public class StackList<T extends Comparable> implements Iterable<T>,Stack<T> {
 
     public void sort(Comparator<T> comparator){
         stack.sort(comparator);
+    }
+
+    public void sort(){
+        boolean sorted = false;
+
+        for (int i = 0; i<stack.size(); i++){
+            if ((Integer)stack.get(i) > (Integer)stack.get(i+1)){
+                //falta implementar el BubbleSort
+            }
+        }
     }
 
     public void print(){

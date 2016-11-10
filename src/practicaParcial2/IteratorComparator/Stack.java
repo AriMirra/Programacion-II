@@ -1,4 +1,4 @@
-package practicaParcial2;
+package practicaParcial2.IteratorComparator;
 
 /**
  * Created by arimi on 09-Nov-16.

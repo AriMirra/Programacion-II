@@ -1,12 +1,9 @@
 package practicaParcial2;
-
 import org.junit.Test;
-
-import javax.swing.plaf.synth.SynthTextAreaUI;
+import practicaParcial2.IteratorComparator.NumbersComparator;
+import practicaParcial2.IteratorComparator.StackList;
 
 import java.util.Comparator;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by arimi on 09-Nov-16.
@@ -30,6 +27,9 @@ public class StackListTest {
         System.out.println();
 
         stack.print();
+
+
+
 
     }
 
