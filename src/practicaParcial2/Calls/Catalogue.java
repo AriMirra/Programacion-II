@@ -9,6 +9,10 @@ public class Catalogue {
 
     private HashMap<CallType,Double> catalogue = new HashMap<>();
 
+    public void add (CallType callType, double value){
+        catalogue.put(callType,value);
+    }
+
     public HashMap<CallType, Double> getCatalogue() {
         return catalogue;
     }

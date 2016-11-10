@@ -7,7 +7,7 @@ import practicaParcial2.Calls.Catalogue;
 /**
  * Created by arimi on 09-Nov-16.
  */
-public abstract class Farer {
+public class Farer {
     private Catalogue catalogue;
     private CallType callType;
 
