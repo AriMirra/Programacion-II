@@ -9,14 +9,14 @@ import practicaParcial2.Calls.Catalogue;
  */
 public class Farer {
     private Catalogue catalogue;
-    private CallType callType;
+    private Call call;
 
-    public Farer(Catalogue catalogue, CallType callType) {
+    public Farer(Catalogue catalogue, Call call) {
         this.catalogue = catalogue;
-        this.callType = callType;
+        this.call = call;
     }
 
     public Double Fare(Call call){
-        return call.getDuration() * catalogue.getCatalogue().get(callType);
+        return call.getDuration() * catalogue.getCatalogue().get(call.);
     }
 }

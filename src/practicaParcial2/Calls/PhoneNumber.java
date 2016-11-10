@@ -8,6 +8,12 @@ public class PhoneNumber {
     private Integer areaId;
     private Integer number;
 
+    public PhoneNumber(Integer countryId, Integer areaId, Integer number) {
+        this.countryId = countryId;
+        this.areaId = areaId;
+        this.number = number;
+    }
+
     public Integer getCountryId() {
         return countryId;
     }

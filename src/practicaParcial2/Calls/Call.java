@@ -49,4 +49,6 @@ public class Call {
     public double getDuration() {
         return duration;
     }
+
+    public
 }
