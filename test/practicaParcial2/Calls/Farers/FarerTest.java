@@ -29,6 +29,7 @@ public class FarerTest {
 
         Farer tarifador = new Farer(catalogo,llamada);
 
+        System.out.println(tarifador.Fare(llamada));
     }
 
 }

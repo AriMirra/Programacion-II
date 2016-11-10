@@ -50,5 +50,7 @@ public class Call {
         return duration;
     }
 
-    public
+    public CallType getCallType() {
+        return callType;
+    }
 }

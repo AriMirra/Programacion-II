@@ -16,7 +16,8 @@ public class Farer {
         this.call = call;
     }
 
-    public Double Fare(Call call){
-        return call.getDuration() * catalogue.getCatalogue().get(call.);
+    public String Fare(Call call){
+        double price = call.getDuration() * catalogue.getCatalogue().get(call.getCallType());
+        return "se ha cobrado $" + price +" por la llamada";
     }
 }
