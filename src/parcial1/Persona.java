@@ -6,6 +6,10 @@ package parcial1;
 public abstract class Persona {
     private Tarjeta tarjeta;
 
+    public Persona(Tarjeta tarjeta){
+        this.tarjeta = tarjeta;
+    }
+
     public Tarjeta getTarjeta() {return tarjeta;}
 
 }

@@ -20,6 +20,10 @@ public class Table {
         return keyB.get(KeyDimensionB);
     }
 
+    public void remove (Object object){
+        if(mapB.containsValue(object)) mapB.remove(object);
+    }
+
     public int size(){
         return mapB.size();
     }
