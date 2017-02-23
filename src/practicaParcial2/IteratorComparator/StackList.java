@@ -11,24 +11,6 @@ public class StackList<T extends Comparable> implements Iterable<T>,Stack<T> {
 
     private ArrayList<T> stack = new ArrayList<>();
 
-    @Override
-    public Iterator<T> iterator() {
-        return new Iterator<T>() {
-            Integer index = 0;
-            @Override
-            public boolean hasNext() {
-                return index != stack.size();
-            }
-
-            @Override
-            public T next() {
-                if (hasNext()) return stack.get(index++);
-                throw new NullPointerException("no hay siguiente");
-            }
-        };
-
-    }
-
 
     @Override
     public void push(T unT) {
@@ -63,5 +45,23 @@ public class StackList<T extends Comparable> implements Iterable<T>,Stack<T> {
         for (T n: stack){
             System.out.println(n);
         }
+    }
+
+    @Override
+    public Iterator<T> iterator() {
+        return new Iterator<T>() {
+            int index = 0;
+
+            @Override
+            public boolean hasNext() {
+                return index != stack.size();
+            }
+
+            @Override
+            public T next() {
+                if (hasNext()) return stack.get(index++);
+                throw new NullPointerException("no hay siguiente");
+            }
+        };
     }
 }

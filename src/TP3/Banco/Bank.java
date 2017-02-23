@@ -1,42 +1,28 @@
 package TP3.Banco;
 
+import java.util.ArrayList;
+
 /**
  * Created by arimi on 18/08/2016.
  */
 public class Bank {
-    private BankAccount[] accounts;
+    private ArrayList<BankAccount> accounts;
     private String name;
 
-    public Bank(String name, int accounts){
-        this.accounts = new BankAccount[accounts];
+    public Bank(String name){
         this.name = name;
+        accounts = new ArrayList<>();
     }
 
-    public boolean transfer(double money, BankAccount account1, BankAccount account2){
-        for (int i = 0; i< accounts.length; i++){
-            if (account1.getName().equals(accounts[i].getName())) {
-                for (int j = 0; j< accounts.length; j++){
-                    if (account2.getName().equals(accounts[j].getName())){
-                        if (money <= account1.getBalance()){
-                            account1.withdraw(money);
-                            account2.deposit(money);
-                            return true;
-                        }
-                    }
-                }
-            }
+    public void transfer(double money, BankAccount account1, BankAccount account2){
+        if (account1.getBalance()>= money){
+            account1.withdraw(money);
+            account2.deposit(money);
         }
-        System.out.println("insufficient founds");
-        return false;
+        else throw new InsuficientFoundsException("no tiene saldo suficiente");
     }
 
-    public boolean addBankAccount (BankAccount account){
-        for (int i = 0; i< accounts.length; i++){
-            if (accounts[i] == null){
-                accounts[i] = account;
-                return true;
-            }
-        }
-        return false;
+    public void addBankAccount (BankAccount account){
+        accounts.add(account);
     }
 }

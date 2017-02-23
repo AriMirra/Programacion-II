@@ -21,7 +21,4 @@ public class Bono implements ibuyable{
     public double getPrice() {
         return price;
     }
-
-
-
 }

@@ -16,9 +16,5 @@ public class Segment {
         length = punto1.getDistance(punto2);
     }
 
-    public double getLength(){
-        return length;
-    }
-
-
+    public double getLength(){return length;}
 }

@@ -10,7 +10,7 @@ public class BankTest extends TestCase {
     SavingsAccount account2 = new SavingsAccount("wewey");
 
     public void testBanco() throws Exception {
-        Bank holis = new Bank("holis",10);
+        Bank holis = new Bank("holis");
         holis.addBankAccount(account1);
         holis.addBankAccount(account2);
         account1.deposit(100);
@@ -20,7 +20,6 @@ public class BankTest extends TestCase {
         assertEquals(9,account2.getFreeTransactions());
         holis.transfer(100,account1,account2);
         assertEquals(0,account1.getBalance(),0.1);
-
     }
 
 }

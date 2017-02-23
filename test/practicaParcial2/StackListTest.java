@@ -2,7 +2,7 @@ package practicaParcial2;
 import org.junit.Test;
 import practicaParcial2.IteratorComparator.NumbersComparator;
 import practicaParcial2.IteratorComparator.StackList;
-
+import static org.junit.Assert.*;
 import java.util.Comparator;
 
 /**
@@ -27,25 +27,14 @@ public class StackListTest {
         System.out.println();
 
         stack.print();
-
-
-
-
-    }
-
-    @Test
-    public void push() throws Exception {
-
     }
 
     @Test
     public void pop() throws Exception {
+        StackList<Double> doubles = new StackList<>();
+        doubles.push(2.4);
+        assertEquals((Double)2.4,doubles.pop());
+        assertEquals(doubles.isEmpty(),true);
 
     }
-
-    @Test
-    public void isEmpty() throws Exception {
-
-    }
-
 }

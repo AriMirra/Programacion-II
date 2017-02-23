@@ -4,17 +4,13 @@ package TP3.ejercicio3;
  * Created by arimi on 25/08/2016.
  */
 public class Rectangle extends Figure {
-    private double area;
-    private double perimeter;
     private double heigth;
     private double base;
 
-    /**
     public Rectangle(Segment base, Segment sides) {
         this.base = base.getLength();
         this.heigth = sides.getLength();
     }
-     */
 
     public Rectangle(double base, double side) {
         this.base = base;

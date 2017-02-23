@@ -1,5 +1,7 @@
 package TP2.ejercicio3;
 
+import java.util.ArrayList;
+
 /**
  * Created by arimi on 19/08/2016.
  */
@@ -11,30 +13,14 @@ public class DrinkCart {
      checkout del Cashier. Invoice conoce los items comprados, su costo y el total a abonar.
      */
 
-    private Drink[] drinkArray;
-    private int space = 0;
-    public DrinkCart(int amount){
-        drinkArray = new Drink[amount];
+    private ArrayList<Drink> drinks;
+    public DrinkCart(){
+        drinks = new ArrayList<>();
     }
-
-    public boolean addDrink(Drink bebida){
-        if (space != drinkArray.length){
-            for (int i = 0; i< drinkArray.length; i++){
-                if(drinkArray[i]== null) {
-                    drinkArray[i] = bebida;
-                    space++;
-                    return true;
-                }
-            }
-        }
-        return false;
+    public void addDrink(Drink bebida){
+        drinks.add(bebida);
     }
-    public int getSpace(){return space;}
+    public int getSpace(){return drinks.size();}
 
-    public Drink drinks(int place){
-        return drinkArray[place];
-    }
-
-
-
+    public ArrayList<Drink> getDrinks(){return drinks;}
 }

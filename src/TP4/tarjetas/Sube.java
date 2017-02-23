@@ -13,10 +13,10 @@ public class Sube {
 
     public void discountBalance(double amount){
         if (balance + descubierto > amount) balance -= amount;
+        else throw new InsufficientFundsException("saldo insuficiente");
     }
     public void addBalance(double amount){
         balance += amount;
-
     }
 
     public void changeDescubierto(int n){

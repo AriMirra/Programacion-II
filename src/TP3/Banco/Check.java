@@ -9,20 +9,18 @@ public class Check {
     private BankAccount owner;
 
     public Check(double amount,BankAccount account){
-        if (account.getBalance()>= amount){
             this.amount = amount;
             this.owner = account;
-        }
-
-
     }
 
     public void deposit(BankAccount account){
-        if (used == false){
+        if (used == false && owner.getBalance()>= amount){
             owner.withdraw(amount);
             account.deposit(amount);
             used = true;
         }
-        else System.out.println("this check is already used");
+        else {
+            throw new InsuficientFoundsException("no hay saldo suficiente en la cuenta del dueño del cheque");
+        }
     }
 }

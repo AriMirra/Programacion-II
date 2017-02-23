@@ -13,7 +13,7 @@ public class Interval {
         interval = new int[size];
         for(int i = 0; i < size; i++){
             interval[i] = n + intervalo;
-            n = n + intervalo;
+            n += intervalo;
         }
     }
 

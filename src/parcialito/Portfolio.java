@@ -2,8 +2,6 @@ package parcialito;
 
 import java.util.ArrayList;
 
-/**
- */
 public class Portfolio {
     private ArrayList<Investment> inversiones;
 
@@ -17,8 +15,9 @@ public class Portfolio {
 
     public double money(){
         double money = 0;
-        for (int i = 0; i <inversiones.size(); i++){
-            money += inversiones.get(i).getAmount();
+
+        for (Investment investment: inversiones){
+            money += investment.getAmount();
         }
         return money;
     }

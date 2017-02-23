@@ -24,9 +24,7 @@ public class Circulo {
     }
 
     public boolean contains(Point2D point){
-        boolean containsPoint = false;
-        if (point.getDistance(center) <= radio) containsPoint = true;
-        return containsPoint;
+        return (point.getDistance(center) <= radio);
         //la distancia de tu punto al center tiene q ser menor al radio
     }
 

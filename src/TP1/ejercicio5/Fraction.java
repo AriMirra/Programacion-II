@@ -43,17 +43,13 @@ public class Fraction {
     public Fraction mul(Fraction f){
         int arriba = dividendo * f.dividendo;
         int abajo = divisor * f.divisor;
-        Fraction result = new Fraction(arriba,abajo);
-        return result;
-
+        return new Fraction(arriba,abajo);
     }
 
     public Fraction div(Fraction f){
         int arriba = dividendo * f.divisor;
         int abajo = divisor * f.dividendo;
-        Fraction result = new Fraction(arriba,abajo);
-        return result;
-
+        return new Fraction(arriba,abajo);
     }
 
     public float asFloat(){return (float)dividendo / (float)divisor;}
